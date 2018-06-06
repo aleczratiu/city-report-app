@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 import { graphql } from 'react-apollo';
-import { CREATE_SESSION_TOKEN_MUTATION } from '../../../../apollo/mutations';
+import { CREATE_SESSION_TOKEN_MUTATION } from '../../../../src/apollo/mutations';
 import { setUser } from '../../../actions/loggedUser';
 import { setSessionToken } from '../../../utils/auth';
 import Login from './Login';
@@ -18,7 +18,9 @@ const LoginUserWithData = graphql(
                     ownProps.setUser({
                         id,
                         email
-                    })
+                    });
+
+                    ownProps.history.push('/');
 
                 } catch(e) {
                     console.log('e', e);

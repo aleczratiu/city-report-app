@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import Header from '../../core/Header';
 
 class Login extends Component {
     constructor() {
@@ -28,7 +29,9 @@ class Login extends Component {
     render() {
         return (
             <div>
-                <Link to="/">Home</Link>
+                <Header>
+                    <Link to="/">Home</Link>
+                </Header>
                 <h1>Login</h1>
                 <input type="email" onChange={this.setEmail} />
                 <input type="password" onChange={this.setPassword} />

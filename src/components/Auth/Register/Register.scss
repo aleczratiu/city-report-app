@@ -1,0 +1,19 @@
+.Register_wrapper {
+    .registerForm {
+        grid-column-start: 2;
+        grid-row-start: 2;
+        max-width: 300px;
+        margin: 0 auto;
+        text-align: center;
+        .label {
+            display: block;
+        }
+        input {
+            margin-bottom: 5px;
+        }
+        button {
+            display: block;
+            margin: 0 auto;
+        }
+    }
+}

@@ -1,7 +1,4 @@
 {
-    "loggedUser": {
-        "firstName": "",
-        "lasName": "",
-        "email": ""
-    }
+    "loggedUser": null,
+    "issue": null
 }
